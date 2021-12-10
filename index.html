@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function() {
+                if(document.querySelector(".menu nav ul").style.display == "flex") {
+                    document.querySelector(".menu nav ul").style.display = "none"
+                } else {
+                    document.querySelector(".menu nav ul").style.display = "flex"
+                }
+            })
+        }
+    </script> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>MediCenter - Projeto Flexbox</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="assets/img/logo.png"></a>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="itens"><a href="#">HOME</a></li>
+                        <li class="itens"><a href="#">HOME</a></li>
+                        <li class="itens"><a href="#">HOME</a></li>
+                        <li class="itens"><a href="#">HOME</a></li>
+                        <li class="itens"><a href="#">HOME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch experience</h1>
+                <h2>Medicenter is a responsible template for all screen sizes</h2>
+            </div>
+
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Emergency Case</div>
+                    <div class="banner_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellendus eius, perferendis quod quidem voluptatibus.</div>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Doctors Timetable</div>
+                    <div class="banner_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellendus eius, perferendis quod quidem voluptatibus.</div>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Opening Hours</div>
+                    <div class="banner_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellendus eius, perferendis quod quidem voluptatibus.</div>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget_title">
+                    <div class="widget_title_text">Latest News</div>
+                    <div class="widget_title_bar"></div>
+                </div>
+                <div class="widget_body">
+                    <article>
+                        <div class="news_data">
+                            <div class="news_posted_at">12 DEC 12</div>
+                            <div class="news_comments">2</div>
+                        </div>
+                        <div class="news_thumbnail">
+                            <!-- column para o texto ficar abaixo da foto -->
+                            <div class="thumb">
+                                <div class="thumb-image"></div>
+                                <div class="thumb-text">
+                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores quae eligendi accusamus inventore cumque quis exercitationem in id facere, ad sint praesentium voluptas voluptates culpa animi labore debitis ratione.
+                                </div>
+                            </div>
+                            <div class="thumb">
+                                <div class="thumb-image"></div>
+                                <div class="thumb-text">
+                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores quae eligendi accusamus inventore cumque quis exercitationem in id facere, ad sint praesentium voluptas voluptates culpa animi labore debitis ratione.
+                                </div>
+                            </div>
+                            <div class="thumb">
+                                <div class="thumb-image"></div>
+                                <div class="thumb-text">
+                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores quae eligendi accusamus inventore cumque quis exercitationem in id facere, ad sint praesentium voluptas voluptates culpa animi labore debitis ratione.
+                                </div>
+                            </div>
+                            <div class="thumb">
+                                <div class="thumb-image"></div>
+                                <div class="thumb-text">
+                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores quae eligendi accusamus inventore cumque quis exercitationem in id facere, ad sint praesentium voluptas voluptates culpa animi labore debitis ratione.
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Departments</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <!-- ativando wrap para descer as divs -->
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                    <div class="widget_title">
+                        <div class="widget_title_text">Make An Appointment</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <span><strong>Number:</strong> 00187625987</span>
+                        <span><strong>E-mail:</strong> medicenter@job.com</span>
+                        <span><strong>Address:</strong> Bobos Street, 45</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <!-- colocando o footer_menu e footer_area como flex-direction: column -->
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <h1>Health Insurance</h1>
+                    Here in medicenter we have individual
+                </div>
+                <div class="fm_2">
+                    <h1>Medical Records</h1>
+                    Here in medicenter we have individual
+                </div>
+                <div class="fm_3">
+                    <h1>Online Bill Pay</h1>
+                    Here in medicenter we have individual
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Medicenter Clinic
+                            </div>
+                            <div class="widget_title_bar"></div>
+                            <div class="widget_body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto debitis ex quos dignissimos commodi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Latest Posts
+                            </div>
+                            <div class="widget_title_bar"></div>
+                            <div class="widget_body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quam provident doloremque sunt voluptate quod laudantium cumque exercitationem corporis totam dolore expedita iste est non debitis tempora ipsum?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Latest Tweets
+                            </div>
+                            <div class="widget_title_bar"></div>
+                            <div class="widget_body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                Copyright - Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
